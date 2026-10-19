@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdEx — Сервис мониторинга и аналитики от DBSL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Фоновое свечение и сетка -->
+    <div class="bg-glow bg-glow-top"></div>
+    <div class="bg-glow bg-glow-middle"></div>
+    <div class="bg-glow bg-glow-bottom"></div>
+    <div class="circuit-overlay"></div>
+
+    <!-- HEADER / HERO -->
+    <header class="hero container">
+        <div class="brand-logo">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%238b5cf6' stroke-width='4'/><text x='50' y='58' font-family='Montserrat' font-size='26' font-weight='bold' fill='white' text-anchor='middle'>DBSL</text></svg>" alt="DBSL Logo" width="100" height="100">
+        </div>
+        
+        <h1 class="main-title">ProdEx</h1>
+        <p class="subtitle">Сервис мониторинга и<br>аналитики от DBSL</p>
+        <p class="hero-desc">Полная картина розничного рынка в любом городе. Актуальные данные<br>о товарах, ценах и ассортименте торговых точек по всей России</p>
+        
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Получить доступ</a>
+            <a href="DBSL_presentation.pdf" download class="btn btn-secondary">Скачать пример отчёта</a>
+        </div>
+    </header>
+
+    <!-- 1. ПРЕИМУЩЕСТВА -->
+    <section class="container section">
+        <h2 class="section-title">Преимущества сервиса</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-number">01</span>
+                <div class="feature-content">
+                    <h3>Персональный подход</h3>
+                    <p>Вы получаете именно те данные, которые нужны вам</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">02</span>
+                <div class="feature-content">
+                    <h3>Детальная информация о товарах, ценах и остатках</h3>
+                    <p>Возможность анализировать рынок в деталях, до конкретной торговой точки</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">03</span>
+                <div class="feature-content">
+                    <h3>Ежедневное обновление информации</h3>
+                    <p>Актуальная картина рынка без запаздывающих или усредненных данных</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">04</span>
+                <div class="feature-content">
+                    <h3>Данные по всей России</h3>
+                    <p>В любой торговой точке любого города страны</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-number">05</span>
+                <div class="feature-content">
+                    <h3>Аналитика рынка</h3>
+                    <p>Структурированные данные, позволяющие быстро и точно принимать решения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ПРОБЛЕМЫ РЫНКА -->
+    <section class="container section">
+        <h2 class="section-title">Проблемы рынка</h2>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <span class="problem-number">01</span>
+                <div class="problem-content">
+                    <h4>Отсутствие прозрачности ассортимента</h4>
+                    <p>Сложно понять, какие товары реально представлены в магазинах и как они распределены по сетям и регионам</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">02</span>
+                <div class="problem-content">
+                    <h4>Неясная ценовая ситуация</h4>
+                    <p>Отсутствует понимание реальных цен на полке с учетом скидок, акций и локальных изменений</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">03</span>
+                <div class="problem-content">
+                    <h4>Недостаток данных о конкурентах</h4>
+                    <p>Информация о ценах, ассортименте и представленности конкурентов фрагментирована или вовсе недоступна</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">04</span>
+                <div class="problem-content">
+                    <h4>Разрозненные данные и ручная работа</h4>
+                    <p>Информация собирается из разных источников, что требует времени и повышает риск ошибок</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">05</span>
+                <div class="problem-content">
+                    <h4>Потери продаж из-за отсутствия товара</h4>
+                    <p>Отсутствие своевременных данных о наличии товара приводит к упущенным продажам</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">06</span>
+                <div class="problem-content">
+                    <h4>Отсутствие контроля исполнения</h4>
+                    <p>Невозможно проверить, как в действительности реализуются промо-акции и договоренности с торговыми сетями</p>
+                </div>
+            </div>
+            <div class="problem-card">
+                <span class="problem-number">07</span>
+                <div class="problem-content">
+                    <h4>Сложности с поиском новых точек</h4>
+                    <p>Выход в новые сети и регионы происходит практически вслепую — без данных о рынке и конкурентной среде</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. НАШЕ РЕШЕНИЕ -->
+    <section class="container section">
+        <h2 class="section-title">Наше решение</h2>
+        <div class="solution-block">
+            <div class="solution-text">
+                <p>Мы собираем и структурируем данные о розничных точках, товарах и ценах, чтобы вы видели реальную картину рынка</p>
+                <ul class="check-list">
+                    <li>Готовый отчёт в Excel</li>
+                    <li>Любой набор городов, сетей и товарных категорий</li>
+                    <li>Разовый срез или регулярный мониторинг</li>
+                    <li>Персональный подход</li>
+                </ul>
+                <a href="DBSL_presentation.pdf" download class="btn btn-secondary btn-small">Скачать пример отчёта</a>
+            </div>
+            <div class="solution-image">
+                <!-- Имитация окна с данными -->
+                <div class="mockup-table">
+                    <div class="mockup-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                    <div class="mockup-row head"><span>Сеть</span><span>Товар</span><span>Цена</span><span>Остаток</span></div>
+                    <div class="mockup-row"><span>Магнит</span><span>Молоко 1л</span><span>89 ₽</span><span>12</span></div>
+                    <div class="mockup-row"><span>Пятёрочка</span><span>Хлеб</span><span>45 ₽</span><span>8</span></div>
+                    <div class="mockup-row"><span>Лента</span><span>Яйца С1</span><span>129 ₽</span><span>24</span></div>
+                </div>
+            </div>
+        </div>
+        <p class="subheading-center">Какие данные вы получаете:</p>
+        <div class="data-cards">
+            <div class="data-card"><span class="data-icon">₽</span>Актуальные цены</div>
+            <div class="data-card"><span class="data-icon">🏷️</span>Обзор брендов на рынке</div>
+            <div class="data-card"><span class="data-icon">📈</span>Информация об акциях</div>
+            <div class="data-card"><span class="data-icon">📍</span>Аналитика рынка по городам и сетям</div>
+            <div class="data-card"><span class="data-icon">📦</span>Данные об остатках товаров в каждом магазине</div>
+            <div class="data-card"><span class="data-icon">🛒</span>Ассортимент в любой торговой точке сети</div>
+        </div>
+    </section>
+
+    <!-- 4. ВОЗМОЖНОСТИ -->
+    <section class="container section">
+        <h2 class="section-title">Какие возможности это открывает</h2>
+        <div class="capabilities-grid">
+            <div class="cap-card">
+                <div class="cap-icon">🔍</div>
+                <h4>Анализ рынка</h4>
+                <p>Сравнивайте цены, бренды, категории, отслеживайте динамику и долю вашего товара на рынке</p>
+            </div>
+            <div class="cap-card">
+                <div class="cap-icon">📦</div>
+                <h4>Контроль наличия и остатков</h4>
+                <p>Контролируйте наличие товара и остатки, своевременно выявляйте отсутствие товара на полке и предотвращайте потери продаж</p>
+            </div>
+            <div class="cap-card">
+                <div class="cap-icon">🏢</div>
+                <h4>Анализ конкурентов</h4>
+                <p>Отслеживайте ценовую политику конкурентов в нужных сетях и регионах</p>
+            </div>
+            <div class="cap-card">
+                <div class="cap-icon">✅</div>
+                <h4>Контроль цен и акций</h4>
+                <p>Проверяйте выполнение акций и договоренностей, отслеживайте фактические цены на ваш товар</p>
+            </div>
+            <div class="cap-card">
+                <div class="cap-icon">🌍</div>
+                <h4>Выход в новые регионы</h4>
+                <p>Заранее оценивайте рынок: уровень цен, конкуренцию и потенциал продаж, чтобы принимать обоснованные решения о расширении</p>
+            </div>
+            <div class="cap-card">
+                <div class="cap-icon">📊</div>
+                <h4>Готовая отчетность под бизнес-задачу</h4>
+                <p>Получайте структурированные отчеты под конкретные цели бизнеса вместо сложного самостоятельного сбора и обработки данных из разных источников</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. КАК ПОЛУЧИТЬ ОТЧЁТ -->
+    <section class="container section">
+        <h2 class="section-title">Как получить отчёт</h2>
+        <div class="steps-wrapper">
+            <div class="step">
+                <span class="step-num">01</span>
+                <div class="step-body">
+                    <h4>Заявка</h4>
+                    <p>Оставьте заявку на сайте</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-num">02</span>
+                <div class="step-body">
+                    <h4>Анализ</h4>
+                    <p>Укажите интересующие вас торговые сети, товары и другие параметры</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-num">03</span>
+                <div class="step-body">
+                    <h4>Согласование</h4>
+                    <p>Согласуем детали и формат отчёта</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-num">04</span>
+                <div class="step-body">
+                    <h4>Договор и оплата</h4>
+                    <p>Подписываем договор и выставляем счёт</p>
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-num">05</span>
+                <div class="step-body">
+                    <h4>Отчёт</h4>
+                    <p>Получаете готовый отчёт</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. КОМУ ПОЛЕЗЕН -->
+    <section class="container section">
+        <h2 class="section-title">Кому будет полезен сервис</h2>
+        <div class="audience-grid">
+            <div class="audience-card">
+                <div class="aud-icon">🚚</div>
+                <h4>Поставщики и дистрибьюторы</h4>
+                <p>Анализ ассортимента и цен в разных торговых точках</p>
+            </div>
+            <div class="audience-card">
+                <div class="aud-icon">🏭</div>
+                <h4>Производители</h4>
+                <p>Контроль представленности товара на рынке и мониторинг цен</p>
+            </div>
+            <div class="audience-card">
+                <div class="aud-icon">🏬</div>
+                <h4>Магнитные команды</h4>
+                <p>Анализ рынка, конкурентов и ценовой стратегии</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. ФОРМА ЗАЯВКИ -->
+    <section class="container section" id="contact">
+        <div class="cta-form-block">
+            <div class="cta-text">
+                <h2>Получите ваш<br>отчёт бесплатно</h2>
+                <p>Заполните форму — мы предоставим пробный отчёт по вашему запросу и продемонстрируем, как сервис может улучшить ваши бизнес-процессы</p>
+                <div class="trust-note">🔒 Нажимая кнопку, вы соглашаетесь с <a href="#" id="privacy-link">политикой конфиденциальности</a> и даёте согласие на обработку персональных данных</div>
+            </div>
+            <form class="cta-form" id="lead-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Имя и фамилия" required>
+                    <input type="text" placeholder="Компания" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Рабочий email" required>
+                    <input type="tel" placeholder="+7 (999) 000-00-00" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Город / регион" class="full-width">
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="container section">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">Как быстро я получу отчёт? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer">Стандартный срок подготовки отчёта — от 3 рабочих дней. Регулярные отчёты поставляются по согласованному графику.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Можно ли заказать отчёт по конкретной сети, бренду, товару или городу? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer">Да, вы можете указать любые интересующие вас параметры: конкретные торговые сети, города, бренды или товарные категории.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">В каком формате приходит отчёт? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer">Мы предоставляем отчёты в формате Excel, а также в виде PDF-презентаций с визуализацией данных.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Как рассчитывается стоимость? <span class="faq-toggle">+</span></div>
+                <div class="faq-answer">Стоимость зависит от объёма данных, количества торговых сетей и периодичности мониторинга. Свяжитесь с нами для точного расчёта.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container footer">
+        <div class="footer-left">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%238b5cf6' stroke-width='4'/><text x='50' y='58' font-family='Montserrat' font-size='26' font-weight='bold' fill='white' text-anchor='middle'>DBSL</text></svg>" width="50" alt="DBSL">
+            <p>© 2024 ProdEx. Все права защищены.</p>
+            <p class="footer-legal">Политика конфиденциальности</p>
+        </div>
+        <div class="footer-right">
+            <a href="tel:+79612475770">+7 961 247-57-70</a>
+            <a href="mailto:ask@dbsl.ru">ask@dbsl.ru</a>
+            <a href="https://t.me/ask_dbsl" target="_blank">@ask_dbsl</a>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ -->
+    <div class="modal-overlay" id="privacy-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <div class="modal-body">
+                <h3>01. Общие положения</h3>
+                <p>Настоящая Политика конфиденциальности определяет порядок обработки персональных данных пользователей сайта dbsl.ru, принадлежащего ООО «ПроДэкс» (далее — Оператор). Политика разработана в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+                
+                <h3>02. Какие данные мы собираем</h3>
+                <p>При заполнении формы заявки на сайте мы получаем следующие персональные данные: имя и фамилия, адрес электронной почты (email), номер телефона, название компании. Мы не собираем специальные категории персональных данных (биометрические, медицинские, данные о судимостях и др.).</p>
+                
+                <h3>03. Цели обработки данных</h3>
+                <p>Персональные данные используются исключительно для: обратной связи по оставленной заявке, направления коммерческого предложения и примера отчёта, заключения и исполнения договора на оказание услуг.</p>
+                
+                <h3>04. Основания и сроки обработки</h3>
+                <p>Обработка осуществляется на основании согласия субъекта персональных данных, выраженного при заполнении формы на сайте. Данные хранятся не дольше, чем этого требуют цели обработки, либо до момента отзыва согласия — но не более 3 лет с даты последнего взаимодействия.</p>
+                
+                <h3>05. Передача третьим лицам</h3>
+                <p>Оператор не передаёт персональные данные третьим лицам без согласия пользователя, за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
+                
+                <h3>06. Права пользователя</h3>
+                <p>В соответствии с 152-ФЗ вы вправе: получить информацию об обрабатываемых персональных данных, потребовать уточнения, блокировки или уничтожения данных, отозвать согласие на обработку в любой момент. Для реализации прав направьте запрос на ask@dbsl.ru — мы ответим в течение 10 рабочих дней.</p>
+                
+                <h3>07. Защита данных</h3>
+                <p>Оператор принимает организационные и технические меры для защиты персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+                
+                <h3>08. Изменения политики</h3>
+                <p>Оператор вправе вносить изменения в настоящую Политику. Актуальная версия всегда доступна на сайте dbsl.ru. Продолжение использования сайта после публикации изменений означает согласие с новой редакцией.</p>
+                
+                <h3>09. Контакты оператора</h3>
+                <p>ООО «ПроДэкс» · Digital Business Solution Lab<br>Email: ask@dbsl.ru<br>Телефон: +7 961 247-57-70</p>
+            </div>
+            <button class="btn btn-primary modal-accept">Принять</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
